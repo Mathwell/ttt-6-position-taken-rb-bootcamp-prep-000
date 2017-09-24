@@ -6,8 +6,10 @@ def position_taken?(board, number)
   end
   if board[index].strip==" "
     return false
-  else
+  elsif board[index]=="X" || board[index]=="O"
     return true
+  else
+    return false
   end
 
 end
