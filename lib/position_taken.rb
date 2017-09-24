@@ -7,11 +7,9 @@ def position_taken?(board, number)
 
   if board.length==0 || index<0 || board[index]==nil
     return false
-  end
-
-  if board[index]==" "
+  elsif board[index]==" "
     return false
-  else
+  elsif  board[index]=="X" || board[index]=="O"    
     return true
   end
 
