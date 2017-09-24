@@ -2,6 +2,7 @@
 def position_taken?(board, number)
   index=number.to_i-1
   puts board[index]
+  puts board[index]=="O"
   if board.length==0 || index<0 || board[index]==nil
     return false
   end
