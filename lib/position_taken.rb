@@ -4,6 +4,11 @@ def position_taken?(board, number)
   puts board[index]
   puts board[index]=="X" || board[index]=="O" || board[index]=="x" || board[index]=="o"
   puts  board[index]==" "
+  if !(board[index]==" ")
+    puts board[index]=="X" || board[index]=="O" || board[index]=="x" || board[index]=="o"
+    if board[index]=="X" || board[index]=="O" || board[index]=="x" || board[index]=="o"
+      puts "Taken"
+  end
 
   if board.length==0 || index<0 || board[index]==nil
     return false
