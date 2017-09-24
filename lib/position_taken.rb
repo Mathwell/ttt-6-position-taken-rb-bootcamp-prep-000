@@ -1,6 +1,6 @@
 # code your #position_taken? method here!
 def position_taken?(board, number)
-  index=number.to_i-1
+  index=number.to_i
   puts board[index]
   puts board.length==0
   puts index
