@@ -2,8 +2,12 @@
 def position_taken?(board, number)
   index=number.to_i-1
   puts board[index]
+  puts board.length==0
+  puts index<0
+  puts board[index]==nil
   puts board[index]=="X" || board[index]=="O" || board[index]=="x" || board[index]=="o"
   puts  board[index]==" "
+
   if !(board[index]==" ")
     puts board[index]=="X" || board[index]=="O" || board[index]=="x" || board[index]=="o"
     if board[index]=="X" || board[index]=="O" || board[index]=="x" || board[index]=="o"
