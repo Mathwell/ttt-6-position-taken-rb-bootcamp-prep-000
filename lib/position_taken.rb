@@ -8,6 +8,7 @@ def position_taken?(board, number)
     puts board[index]=="X" || board[index]=="O" || board[index]=="x" || board[index]=="o"
     if board[index]=="X" || board[index]=="O" || board[index]=="x" || board[index]=="o"
       puts "Taken"
+      puts board.length==0 || index<0 || board[index]==nil
     end
   end
 
@@ -16,6 +17,7 @@ def position_taken?(board, number)
   elsif board[index]==" "
     return false
   elsif  board[index]=="X" || board[index]=="O"
+    puts "true"
     return true
   end
 
